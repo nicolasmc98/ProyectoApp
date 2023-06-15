@@ -10,9 +10,11 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\Nicol\
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\Nicol\.gradle\caches\transforms-3\7791fe77b8ab9730d0e25ce55c6aa090\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
 MERGED from [:react-native-vector-icons] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-masked-view_masked-view] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-date-picker] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-date-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-svg] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.10] C:\Users\Nicol\.gradle\caches\transforms-3\bda23e2b2741af902b5e8b14de4054f8\transformed\jetified-react-android-0.71.10-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Nicol\.gradle\caches\transforms-3\99aff712051ad58ba66b2f75862e9a10\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:hermes-android:0.71.10] C:\Users\Nicol\.gradle\caches\transforms-3\565c567c8c887093c38a7d85d86080a2\transformed\jetified-hermes-android-0.71.10-debug\AndroidManifest.xml:2:1-9:12
@@ -70,6 +72,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Nicol\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Nicol\.gradle\caches\transforms-3\2e0accbb389972b5f1db38887935d0a0\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Nicol\.gradle\caches\transforms-3\ee3e4a66e82f153e2584c52764ba5309\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nicol\.gradle\caches\transforms-3\02639a8608dbbeb54d571976ba144a31\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] C:\Users\Nicol\.gradle\caches\transforms-3\4b42da9ed8c39db612fcd2be8eb531a3\transformed\jetified-numberpickerview-v1.1.5\AndroidManifest.xml:2:1-11:12
+MERGED from [net.time4j:time4j-android:4.8-2021a] C:\Users\Nicol\.gradle\caches\transforms-3\ad474f9ab9c59ed514ffedac7aedd465\transformed\jetified-time4j-android-4.8-2021a\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\Nicol\.gradle\caches\transforms-3\a3a558311ee849776c10e746c33d96f0\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Nicol\.gradle\caches\transforms-3\b36df8da1dd3422e7688e01fe20caa41\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\android\app\src\debug\AndroidManifest.xml:2:1-13:12
@@ -117,6 +121,8 @@ MERGED from [androidx.core:core:1.7.0] C:\Users\Nicol\.gradle\caches\transforms-
 MERGED from [androidx.core:core:1.7.0] C:\Users\Nicol\.gradle\caches\transforms-3\c05df83dbc847297b7ccad2bb18337e0\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nicol\.gradle\caches\transforms-3\c5107d5e475ee8dcd270599e360e9f6d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nicol\.gradle\caches\transforms-3\c5107d5e475ee8dcd270599e360e9f6d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [net.time4j:time4j-android:4.8-2021a] C:\Users\Nicol\.gradle\caches\transforms-3\ad474f9ab9c59ed514ffedac7aedd465\transformed\jetified-time4j-android-4.8-2021a\AndroidManifest.xml:11:5-20
+MERGED from [net.time4j:time4j-android:4.8-2021a] C:\Users\Nicol\.gradle\caches\transforms-3\ad474f9ab9c59ed514ffedac7aedd465\transformed\jetified-time4j-android-4.8-2021a\AndroidManifest.xml:11:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\Nicol\.gradle\caches\transforms-3\c05df83dbc847297b7ccad2bb18337e0\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
@@ -181,12 +187,16 @@ MERGED from [:react-native-vector-icons] C:\Users\Nicol\OneDrive\Escritorio\Git\
 MERGED from [:react-native-vector-icons] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-masked-view_masked-view] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-masked-view_masked-view] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-date-picker] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-date-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-date-picker] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-date-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] C:\Users\Nicol\OneDrive\Escritorio\Git\ProyectoApp\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.10] C:\Users\Nicol\.gradle\caches\transforms-3\bda23e2b2741af902b5e8b14de4054f8\transformed\jetified-react-android-0.71.10-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.10] C:\Users\Nicol\.gradle\caches\transforms-3\bda23e2b2741af902b5e8b14de4054f8\transformed\jetified-react-android-0.71.10-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Nicol\.gradle\caches\transforms-3\99aff712051ad58ba66b2f75862e9a10\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -301,6 +311,10 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Nicol\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Nicol\.gradle\caches\transforms-3\ee3e4a66e82f153e2584c52764ba5309\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nicol\.gradle\caches\transforms-3\02639a8608dbbeb54d571976ba144a31\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nicol\.gradle\caches\transforms-3\02639a8608dbbeb54d571976ba144a31\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] C:\Users\Nicol\.gradle\caches\transforms-3\4b42da9ed8c39db612fcd2be8eb531a3\transformed\jetified-numberpickerview-v1.1.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] C:\Users\Nicol\.gradle\caches\transforms-3\4b42da9ed8c39db612fcd2be8eb531a3\transformed\jetified-numberpickerview-v1.1.5\AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] C:\Users\Nicol\.gradle\caches\transforms-3\ad474f9ab9c59ed514ffedac7aedd465\transformed\jetified-time4j-android-4.8-2021a\AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] C:\Users\Nicol\.gradle\caches\transforms-3\ad474f9ab9c59ed514ffedac7aedd465\transformed\jetified-time4j-android-4.8-2021a\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\Nicol\.gradle\caches\transforms-3\a3a558311ee849776c10e746c33d96f0\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\Nicol\.gradle\caches\transforms-3\a3a558311ee849776c10e746c33d96f0\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Nicol\.gradle\caches\transforms-3\b36df8da1dd3422e7688e01fe20caa41\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
