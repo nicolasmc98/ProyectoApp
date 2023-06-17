@@ -11,6 +11,7 @@ import {
 import DatePicker from 'react-native-date-picker';
 
 import InputField from '../components/InputField';
+import { Alert } from 'react-native';
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -22,13 +23,56 @@ import TwitterSVG from '../images/twitter.svg';
 import CustomButton from '../components/CustomButtom';
 import { useNavigation } from '@react-navigation/native';
 
-const Signup = () => {
+
+import { getAuth,createUserWithEmailAndPassword } from "firebase/auth";
+
+export const Signup = () => {
 
   const navigation = useNavigation();
+  const auth = getAuth();
 
-  const [date, setDate] = useState(new Date());
-  const [open, setOpen] = useState(false);
-  const [dobLabel, setDobLabel] = useState('Date of Birth');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
+
+  const handleInputChange = (inputType, text) => {
+    if (inputType === 'Email ID') {
+      setEmail(text);
+    } else if (inputType === 'password') {
+      setPassword(text);
+    } else if (inputType === 'Confirm Password') {
+      setConfirmPass(text);
+  }
+  };
+
+  const handleSignUp = () => {
+
+    if (email.length == 0) {
+      Alert.alert("aweonao");
+    } else if (password.length == 0) {
+      Alert.alert("Please Enter Password");
+    } else if (confirmPass.length == 0) {
+      Alert.alert("Please Enter Confirm Password");
+    } else if (password != confirmPass) {
+      Alert.alert("Confirm Password does not match");
+    } else {
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          navigation.goBack();
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          // ..
+        });
+    }
+  }
+
+  
 
 
   return (
@@ -101,18 +145,6 @@ const Signup = () => {
         </Text>
 
         <InputField
-          label={'Full Name'}
-          icon={
-            <Ionicons
-              name="person-outline"
-              size={20}
-              color="#666"
-              style={{marginRight: 5}}
-            />
-          }
-        />
-
-        <InputField
           label={'Email ID'}
           icon={
             <MaterialIcons
@@ -123,10 +155,12 @@ const Signup = () => {
             />
           }
           keyboardType="email-address"
+          onInputChange={handleInputChange}
+          inputType="Email ID"
         />
 
         <InputField
-          label={'Password'}
+          label={'password'}
           icon={
             <Ionicons
               name="ios-lock-closed-outline"
@@ -136,6 +170,7 @@ const Signup = () => {
             />
           }
           inputType="password"
+          onInputChange={handleInputChange}
         />
 
         <InputField
@@ -148,48 +183,11 @@ const Signup = () => {
               style={{marginRight: 5}}
             />
           }
-          inputType="password"
+          inputType="Confirm Password"
+          onInputChange={handleInputChange}
         />
 
-        <View
-          style={{
-            flexDirection: 'row',
-            borderBottomColor: '#ccc',
-            borderBottomWidth: 1,
-            paddingBottom: 8,
-            marginBottom: 30,
-          }}>
-          <Ionicons
-            name="calendar-outline"
-            size={20}
-            color="#666"
-            style={{marginRight: 5}}
-          />
-          <TouchableOpacity onPress={() => setOpen(true)}>
-            <Text style={{color: '#666', marginLeft: 5, marginTop: 5}}>
-              {dobLabel}
-            </Text>
-          </TouchableOpacity>
-        </View>
-
-        <DatePicker
-          modal
-          open={open}
-          date={date}
-          mode={'date'}
-          maximumDate={new Date('2005-01-01')}
-          minimumDate={new Date('1980-01-01')}
-          onConfirm={date => {
-            setOpen(false);
-            setDate(date);
-            setDobLabel(date.toDateString());
-          }}
-          onCancel={() => {
-            setOpen(false);
-          }}
-        />
-
-        <CustomButton label={'Register'} onPress={() => {}} />
+        <CustomButton label={'Register'} onPress={handleSignUp} />
 
         <View
           style={{
@@ -206,6 +204,7 @@ const Signup = () => {
     </SafeAreaView>
   );
 };
+
 
 export default Signup;
 

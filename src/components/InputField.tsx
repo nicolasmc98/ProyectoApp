@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {View, Text, TouchableOpacity, TextInput} from 'react-native';
 
 export default function InputField({
@@ -8,7 +8,15 @@ export default function InputField({
   keyboardType,
   fieldButtonLabel,
   fieldButtonFunction,
+  onInputChange
 }) {
+
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (text) => {
+    setInputValue(text);
+    onInputChange(inputType, text);
+  };
   return (
     <View
       style={{
@@ -24,15 +32,22 @@ export default function InputField({
           placeholder={label}
           keyboardType={keyboardType}
           style={{flex: 1, paddingVertical: 0}}
-          secureTextEntry={true}
-        />
+          secureTextEntry={inputType === 'password'}
+          onChangeText={(text) => handleInputChange(text)} value={inputValue} />
+      ) : inputType == 'Email ID' ? (
+        <TextInput onChangeText={(text) => handleInputChange(text)} value={inputValue} />
+      
+      ) : inputType == 'Confirm Password' ? (
+        <TextInput onChangeText={(text) => handleInputChange(text)} value={inputValue} />
       ) : (
         <TextInput
           placeholder={label}
           keyboardType={keyboardType}
           style={{flex: 1, paddingVertical: 0}}
+          onChangeText={(text) => handleInputChange(text)} value={inputValue} 
         />
       )}
+      
       <TouchableOpacity onPress={fieldButtonFunction}>
         <Text style={{color: '#AD40AF', fontWeight: '700'}}>{fieldButtonLabel}</Text>
       </TouchableOpacity>

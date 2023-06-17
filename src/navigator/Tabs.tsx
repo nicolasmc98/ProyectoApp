@@ -1,13 +1,14 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import Search from '../screens/Search';
 import Profile from '../screens/Profile';
-import MyStack from './AuthStack';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Favorite from '../screens/Favorite';
 
 const Tab = createMaterialBottomTabNavigator();
 
 export const MyTabs = () => {
+
+  
   return (
     <Tab.Navigator>
       <Tab.Screen name="Search" component={Search} options={{title:"Buscar", tabBarIcon: ({ color }) => (

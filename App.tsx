@@ -14,11 +14,11 @@ import AuthStack from './src/navigator/AuthStack';
 
 export const App = () => {
   
-  /*useEffect(() => {
+  useEffect(() => {
     if (!firebase.apps.length) {
       const app = firebase.initializeApp(firebaseConfig);
       const auth = getAuth(app); 
-  }},[])*/
+  }},[])
   
   return (
     <NavigationContainer>

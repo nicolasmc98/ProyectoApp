@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {SafeAreaView,View,Text,TextInput,TouchableOpacity,} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Alert } from 'react-native';
 
 import LoginSVG from '../images/login.svg';
 import GoogleSVG from '../images/google.svg';
@@ -13,11 +14,54 @@ import InputField from '../components/InputField';
 import { StackScreenProps } from '@react-navigation/stack';
 
 
+import { getAuth,signInWithEmailAndPassword  } from "firebase/auth";
+
+
+
 interface Props extends StackScreenProps<any,any>{};
 
 export const Login = ({navigation}: Props) => {
-  
+  const auth = getAuth();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
+  const handleInputChange = (inputType, text) => {
+    if (inputType === 'Email ID') {
+      setEmail(text);
+    } else if (inputType === 'password') {
+      setPassword(text);
+      
+    }  
+  };
+
+  const handleLogin = () => {
+    if (email === '') {
+      Alert.alert('Error', 'Please enter your email.');
+    } 
+    if (password === '') {
+      Alert.alert('Error', 'Please enter your password.');
+    } else {
+      setLoading(true);
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          setLoading(false);
+          navigation.navigate("MyTabs");
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          Alert.alert(error.message);
+          setLoading(false);
+          // ..
+        });
+    }
+
+    // Realizar lógica de inicio de sesión con los valores de email y password
+  };
   return (
     <SafeAreaView style={{flex: 1, justifyContent: 'center'}}>
       <View style={{paddingHorizontal: 25}}>
@@ -50,25 +94,27 @@ export const Login = ({navigation}: Props) => {
             style={{marginRight: 5}}
           />
           }
+          inputType="Email ID"
           keyboardType="email-address"
+          onInputChange={handleInputChange}
+            
         />
 
-<InputField
-          label={'Password'}
+        <InputField 
+          label={'password'}
           icon={
             <Ionicons
             name="ios-lock-closed-outline"
             size={20}
             color="#666"
-            style={{marginRight: 5}}
+            style={{marginRight: 5}}  
           />
           }
           inputType="password"
-          fieldButtonLabel={"Forgot?"}
-          fieldButtonFunction={() => {}}
+          onInputChange={handleInputChange}
         />
         
-        <CustomButton label={"Login"} onPress={() => {}} />
+        <CustomButton label={"Login"} onPress={handleLogin}  />
 
         <Text style={{textAlign: 'center', color: '#666', marginBottom: 30}}>
           Or, login with ...
