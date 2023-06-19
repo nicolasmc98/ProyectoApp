@@ -10,16 +10,21 @@ export const MyTabs = () => {
 
   
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+    initialRouteName="Search"
+    activeColor="#000000"
+    barStyle={{ backgroundColor: '#caff42' }}
+    >
       <Tab.Screen name="Search" component={Search} options={{title:"Buscar", tabBarIcon: ({ color }) => (
-            <Icon name="search-circle-outline" color={color} size={26} />
-          )}}   />
-      <Tab.Screen name="Profile" component={Profile} options={{title:"Perfil", tabBarIcon: ({ color }) => (
-            <Icon name="person-circle-outline" color={color} size={26} />
+            <Icon name="search-circle-outline" color={color} size={26}  />
           )}}   />
       <Tab.Screen name="Favorite" component={Favorite} options={{title:"Favorito", tabBarIcon: ({ color }) => (
             <Icon name="heart-circle-outline" color={color} size={26} />
+          )}}   />  
+      <Tab.Screen name="Profile" component={Profile} options={{title:"Perfil", tabBarIcon: ({ color }) => (
+            <Icon name="person-circle-outline" color={color} size={26} />
           )}}   />
+      
     </Tab.Navigator>
   );
 }

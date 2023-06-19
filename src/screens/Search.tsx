@@ -1,10 +1,11 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React from "react";
+import { View } from "react-native";
+import { Text } from "react-native-paper";
 
 export const Search = () => {
-  return (
+    return (
     <View>
-       <Text> Perfil</Text> 
+    <Text> Perfil</Text> 
     </View>
   )
 }

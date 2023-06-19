@@ -35,10 +35,20 @@ export default function InputField({
           secureTextEntry={inputType === 'password'}
           onChangeText={(text) => handleInputChange(text)} value={inputValue} />
       ) : inputType == 'Email ID' ? (
-        <TextInput onChangeText={(text) => handleInputChange(text)} value={inputValue} />
+        <TextInput 
+          placeholder={label}
+          keyboardType={keyboardType}
+          style={{flex: 1, paddingVertical: 0}}
+          onChangeText={(text) => handleInputChange(text)} value={inputValue} />
       
       ) : inputType == 'Confirm Password' ? (
-        <TextInput onChangeText={(text) => handleInputChange(text)} value={inputValue} />
+        <TextInput 
+          placeholder={label}
+          keyboardType={keyboardType}
+          style={{flex: 1, paddingVertical: 0}}
+          secureTextEntry={inputType === 'Confirm Password'}
+          onChangeText={(text) => handleInputChange(text)} value={inputValue} />
+        
       ) : (
         <TextInput
           placeholder={label}
