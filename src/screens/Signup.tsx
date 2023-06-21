@@ -48,7 +48,7 @@ export const Signup = () => {
   const handleSignUp = () => {
 
     if (email.length == 0) {
-      Alert.alert("aweonao");
+      Alert.alert("Please enter Email");
     } else if (password.length == 0) {
       Alert.alert("Please Enter Password");
     } else if (confirmPass.length == 0) {
